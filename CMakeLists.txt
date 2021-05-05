@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)  
+project( IDCard_OCR )  
+aux_source_directory(. DIR_SRCS)
+find_package( OpenCV REQUIRED )  
+add_executable( IDCard_OCR ${DIR_SRCS} )  
+target_link_libraries( IDCard_OCR ${OpenCV_LIBS} )
